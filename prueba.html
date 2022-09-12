@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+	<link rel = "stylesheet" href= "css/bootstrap.min.css">
+ 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+    <title>tarea</title>
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body{
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #851B38;
+		}
+		
+		body:hover{
+			background-color: #220207;
+			transition-duration: 3s;
+		}
+		
+		#bot:hover{
+			background-color: black;
+			transition-duration: 0.5s;
+		}
+		
+		.login{
+			width: 360px;
+			height: min-content;
+			padding: 15px;
+			border-radius: 12px;
+			background: #FCEDC2;
+
+		}
+		
+		.login h1{
+			font-size: 36px;
+			margin-bottom: 25px;
+		}
+		
+		.login form{
+			font-size: 20px;
+		}
+		
+		.login form .form-grupo{
+			margin-bottom: 12px;
+		}
+		
+		.login form input[type = "submit"]{
+			font-size: 20px;
+			margin-top: 15px;
+		}
+	</style>
+  </head>
+  
+	<body>
+
+		<div class = "login">
+			<h1 class = "text-center"> Login</h1>
+			
+			<form>
+			
+				<div class = "form-grupo">
+					<label class = "form-label" for = "usuario">Usuario</label>
+					<input class = "form-control" type = "usuario" id = "usuario">
+				</div>
+				
+				<div class = "form-grupo">
+					<label class = "form-label" for = "lbl_contrasena">Contraseña </label>
+					<input class = "form-control" type = "contraseña" id = "txt_contrasena">
+				</div>
+				
+				<div class= "form-grupo form-check">
+					<input class = "form-check-input" type = "checkbox" id = "check">
+					<label class = "form-check-label" for = "check">Recordar</label>
+				</div>
+				
+				<input id="bot" class = "btn btn-success w-100" type = "submit" value = "SIGN IN">
+				
+			</form>
+		</div>
+	</body>
+</html>
